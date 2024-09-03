@@ -1,0 +1,84 @@
+@keyframes rainbow {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    height: 100vh;
+    animation: rainbow 20s ease infinite;
+    background: linear-gradient(270deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+    background-size: 1400% 1400%;
+    color: white;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.mascot {
+    width: 15%;
+    animation: float 6s ease-in-out infinite;
+    margin-top: 20px;
+}
+
+.title {
+    font-size: 3em;
+    animation: titleAnimation 5s infinite;
+}
+
+@keyframes titleAnimation {
+    0% { color: #ff0000; }
+    25% { color: #00ff00; }
+    50% { color: #0000ff; }
+    75% { color: #ffff00; }
+    100% { color: #ff0000; }
+}
+
+.gifs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.gifs img {
+    flex: 1 1 auto;
+    max-width: 18%;
+    height: auto;
+}
+
+.text-animation {
+    background: #000;
+    color: #fff;
+    font-size: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.scroll-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-text 10s linear infinite;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.twitter-btn {
+    background: #1DA1F2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
